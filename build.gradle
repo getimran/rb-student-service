@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'ae.rakbank'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 sourceCompatibility = '1.8'
 
 repositories {
@@ -23,8 +23,14 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'junit:junit:4.13.2'
+	testImplementation 'org.mockito:mockito-core:4.9.0'
+
+
 }
 
-tasks.named('test') {
+test {
 	useJUnitPlatform()
 }
+
+

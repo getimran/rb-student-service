@@ -6,8 +6,7 @@ import ae.rakbank.student.exception.StudentNotFoundException;
 import ae.rakbank.student.exception.StudentServiceException;
 import ae.rakbank.student.service.impl.StudentServiceImpl;
 import ae.rakbank.student.utility.StudentUtility;
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
-import io.swagger.v3.oas.annotations.info.Info;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,7 +23,8 @@ import static ae.rakbank.student.utility.LogMessages.*;
  */
 @Slf4j
 @RestController
-@RequestMapping("/rakbank/api/v1/student")
+@RequestMapping("/rakbank/api/student")
+@Tag(name = "Student API", description = "API for adding new Student and retrieving Student by studentId")
 public class StudentController {
 
     @Autowired

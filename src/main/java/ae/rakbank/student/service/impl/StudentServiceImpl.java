@@ -19,7 +19,7 @@ import java.util.Optional;
 public class StudentServiceImpl implements StudentService {
 
     @Autowired
-    StudentRepository studentRepository;
+    private StudentRepository studentRepository;
 
     /**
      *

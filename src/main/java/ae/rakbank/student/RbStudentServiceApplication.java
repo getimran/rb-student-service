@@ -1,6 +1,7 @@
 package ae.rakbank.student;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,8 +12,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @OpenAPIDefinition(info = @Info(
-		title = "Student API Definition",
-		description = "API for adding new Student and retrieving Student based on studentId",
+		title = "Student Service Definition",
+		description = "Microservice for adding new Student and retrieving Student based on studentId",
+		contact = @Contact(
+			name = "Mohammad Imran",
+			url= "https://www.linkedin.com/in/md-imran-02524a125/",
+			email= "mailmeinfo.imran@gmail.com"
+		),
 		version = "v1"
 ))
 public class RbStudentServiceApplication {
