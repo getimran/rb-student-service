@@ -36,7 +36,6 @@ public class StudentController {
      * @return
      * @throws StudentServiceException
      */
-    @ResponseBody
     @PostMapping
     public ResponseEntity<Student> saveStudent(@Valid @RequestBody StudentRequest studentRequest) throws StudentServiceException {
 
@@ -53,7 +52,6 @@ public class StudentController {
      * @throws StudentServiceException
      * @throws StudentNotFoundException
      */
-    @ResponseBody
     @GetMapping("/{studentId}")
     public ResponseEntity<Student> findByStudentId(@PathVariable Integer studentId) throws StudentServiceException, StudentNotFoundException {
 

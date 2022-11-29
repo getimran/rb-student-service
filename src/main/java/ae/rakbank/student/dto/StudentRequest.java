@@ -17,6 +17,7 @@ import static ae.rakbank.student.utility.AppConstants.*;
 public class StudentRequest {
 
     @NotBlank
+    @Pattern(regexp=REGEX_ONLY_LETTERS, message=ONLY_LETTERS_ALLOWED)
     private String studentName;
 
     @NotBlank
@@ -25,6 +26,6 @@ public class StudentRequest {
     @NotBlank
     private String schoolName;
 
-    @Pattern(regexp=MOB_NUM_REGEX, message=MOB_NUM_VALIDATION_MESSAGE)
+    @Pattern(regexp=REGEX_MOB_NUM, message=MOB_NUM_VALIDATION_MESSAGE)
     private String mobileNum;
 }

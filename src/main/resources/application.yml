@@ -1,11 +1,11 @@
 server:
-  port: 8082
+  port: 8080
 
 springdoc:
   api-docs:
     path: /rb-student-openapi
   swagger-ui:
-    path: /rakbank/api/swagger-ui.html
+    path: /rakbank/api/student/swagger-ui.html
 
 spring:
   datasource:
